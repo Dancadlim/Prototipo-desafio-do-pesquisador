@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lixo Zero Coleta - Transformando Lixo em Oportunidade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #f0f8ff;
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+                url('https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .map-pin {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Cabeçalho -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block mr-2"><path d="M20.92 15.63A9 9 0 0 0 12 5.5a9 9 0 0 0-8.92 10.13"></path><path d="m2 16 2.54.54a3 3 0 0 1 2.92 2.92L8 22"></path><path d="M18.54 16.08a3 3 0 0 0 2.92 2.92L22 19.54"></path><path d="M16 14a2 2 0 1 0-4 0c0 1.6 2 3 2 3s2-1.4 2-3Z"></path><path d="M12 5.5V3"></path><path d="m5 7-1-1"></path><path d="m19 7 1-1"></path></svg>
+                Lixo Zero Coleta
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#como-funciona" class="text-gray-600 hover:text-blue-600 transition duration-300">Como Funciona</a>
+                <a href="#tecnologia" class="text-gray-600 hover:text-blue-600 transition duration-300">Nossa Tecnologia</a>
+                <a href="#pontos-coleta" class="text-gray-600 hover:text-blue-600 transition duration-300">Pontos de Coleta</a>
+                <a href="#parceiros" class="text-gray-600 hover:text-blue-600 transition duration-300">Seja um Parceiro</a>
+            </div>
+            <a href="#" class="bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg">Baixe o App</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section class="hero-bg py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-black text-blue-900 mb-4 leading-tight">Transforme lixo em recompensa.</h1>
+                <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8">Junte-se à nossa comunidade, ajude a limpar o planeta e ganhe prêmios incríveis. Coletar lixo nunca foi tão gratificante.</p>
+                <a href="#" class="bg-blue-600 text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-blue-700 transition duration-300 shadow-xl">Comece a Coletar Agora</a>
+            </div>
+        </section>
+
+        <!-- Seção Como Funciona -->
+        <section id="como-funciona" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">É simples, rápido e recompensador</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Siga estes 3 passos para fazer a diferença e ser recompensado por isso.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <!-- Passo 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">1. Colete e Registre</h3>
+                        <p class="text-gray-600">Use nosso app para encontrar "hotspots" de lixo, colete os resíduos e tire uma foto com geolocalização para validar sua coleta.</p>
+                    </div>
+                    <!-- Passo 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">2. Descarte no Ponto Certo</h3>
+                        <p class="text-gray-600">Leve o material coletado até um de nossos pontos de coleta parceiros. Lá, o material será pesado e destinado corretamente.</p>
+                    </div>
+                    <!-- Passo 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"></path><path d="M7 7h.01"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">3. Ganhe Recompensas</h3>
+                        <p class="text-gray-600">Acumule pontos e troque por vouchers, descontos no comércio local, produtos e até benefícios sociais. Quanto mais você coleta, mais você ganha!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Nossa Tecnologia -->
+        <section id="tecnologia" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Inteligência a serviço do Meio Ambiente</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Usamos tecnologia de ponta para otimizar a coleta e maximizar nosso impacto.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Tecnologia Card 1 -->
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                        <h3 class="text-lg font-bold text-blue-800 mb-2">Satélites e Drones</h3>
+                        <p class="text-sm text-gray-600">Mapeamos grandes áreas para identificar zonas críticas de acúmulo de lixo, direcionando nossos esforços de forma mais eficiente.</p>
+                    </div>
+                    <!-- Tecnologia Card 2 -->
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                        <h3 class="text-lg font-bold text-blue-800 mb-2">Inteligência Artificial</h3>
+                        <p class="text-sm text-gray-600">Nossos algoritmos analisam imagens para detectar, classificar e quantificar o lixo, garantindo a veracidade dos dados coletados.</p>
+                    </div>
+                    <!-- Tecnologia Card 3 -->
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                        <h3 class="text-lg font-bold text-blue-800 mb-2">Sensores IoT</h3>
+                        <p class="text-sm text-gray-600">Monitoramos o nível de lixeiras e ecopontos em tempo real, otimizando as rotas de coleta e reduzindo custos e emissões.</p>
+                    </div>
+                    <!-- Tecnologia Card 4 -->
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                        <h3 class="text-lg font-bold text-blue-800 mb-2">Plataforma Gamificada</h3>
+                        <p class="text-sm text-gray-600">Nosso aplicativo transforma a coleta em uma jornada divertida com pontos, missões e ranking, mantendo a comunidade engajada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção O que fazemos com o lixo -->
+        <section class="py-20 bg-blue-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">O lixo coletado vira matéria-prima e impacto positivo</h2>
+                     <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Cada item tem um destino nobre, gerando valor para a sociedade e para o planeta.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1599839955462-8d4a65691456?q=80&w=1974&auto=format&fit=crop" alt="Mãos segurando broto de planta" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-200 text-blue-700 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 20A10 10 0 1 0 4.2 4.2"></path><polyline points="10 2 10 12 15 12"></polyline></svg>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-blue-900">Reciclagem e Venda</h4>
+                                <p class="text-gray-600">Materiais como PET, alumínio e papelão são separados e vendidos para a indústria, voltando ao ciclo produtivo como novos produtos.</p>
+                            </div>
+                        </div>
+                         <div class="flex items-start">
+                            <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-200 text-blue-700 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v12"></path><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a2 2 0 0 1 1.79 1.11L15 5.88Z"></path></svg>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-blue-900">"Plástico Social" e Créditos</h4>
+                                <p class="text-gray-600">Trabalhamos com empresas para transformar o plástico coletado em matéria-prima com valor social ou em créditos, permitindo que elas neutralizem sua pegada plástica.</p>
+                            </div>
+                        </div>
+                         <div class="flex items-start">
+                            <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-200 text-blue-700 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.1 18.1 4.4-4.2a2 2 0 0 0 0-2.8l-4.4-4.2a2 2 0 0 0-2.8 0l-4.2 4.4a2 2 0 0 0 0 2.8l4.2 4.4a2 2 0 0 0 2.8 0Z"></path><path d="m12 15 2.5-2.5"></path><path d="m14 17 2-2"></path><path d="m5 12 2.5-2.5"></path><path d="m7 14 2-2"></path><path d="m19 5-2.5 2.5"></path><path d="m17 7-2 2"></path><path d="M9 5 6.5 7.5"></path><path d="M11 7 9 9"></path></svg>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-blue-900">Energia Limpa</h4>
+                                <p class="text-gray-600">Os rejeitos não recicláveis são destinados para o coprocessamento em fornos de cimenteiras, substituindo combustíveis fósseis e gerando energia de forma mais limpa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Pontos de Coleta -->
+        <section id="pontos-coleta" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Encontre um Ponto de Coleta</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Veja o mapa abaixo para encontrar o ponto de descarte parceiro mais próximo de você.</p>
+                </div>
+
+                <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+                    <!-- Detalhes do Ponto de Coleta -->
+                    <div id="location-details" class="col-span-1 mb-8 lg:mb-0">
+                        <div class="bg-white p-6 rounded-lg shadow-md border">
+                            <h3 id="location-name" class="text-2xl font-bold text-blue-800 mb-2">Selecione um ponto no mapa</h3>
+                            <p id="location-address" class="text-gray-600 mb-4">Os detalhes aparecerão aqui.</p>
+                            <div id="location-hours" class="text-sm text-gray-500"></div>
+                            <div id="location-materials" class="mt-4"></div>
+                        </div>
+                    </div>
+
+                    <!-- Mapa Fictício -->
+                    <div class="col-span-2 bg-blue-50 rounded-lg shadow-lg p-4 relative h-96 md:h-[500px]">
+                        <img src="https://placehold.co/1000x600/EBF8FF/3182CE?text=Mapa+de+Salvador" class="absolute top-0 left-0 w-full h-full object-cover rounded-lg opacity-30" alt="Mapa da cidade de Salvador">
+                        <div id="map-container" class="relative w-full h-full">
+                            <!-- Pins no mapa -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção Parceiros -->
+        <section id="parceiros" class="bg-gray-50 py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-blue-600 font-semibold">Para Empresas</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mt-2 mb-4">Seja uma Empresa Parceira</h2>
+                        <p class="text-gray-600 mb-6">Associe sua marca a uma causa de impacto real. Ao se tornar nosso parceiro, sua empresa fortalece suas metas ESG, engaja consumidores e diferencia-se no mercado com uma narrativa autêntica de sustentabilidade e responsabilidade social.</p>
+                        <a href="#" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300 shadow-md">Saiba Mais sobre Parcerias</a>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                            <h4 class="text-xl font-bold text-blue-800">Neutralize sua Pegada</h4>
+                            <p class="text-sm text-gray-500 mt-1">Compre créditos de plástico e compense o impacto das suas operações.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                            <h4 class="text-xl font-bold text-blue-800">Marketing com Propósito</h4>
+                            <p class="text-sm text-gray-500 mt-1">Utilize nossa história para criar campanhas autênticas e conectar-se com seus clientes.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                            <h4 class="text-xl font-bold text-blue-800">Engajamento Comunitário</h4>
+                            <p class="text-sm text-gray-500 mt-1">Patrocine ações de limpeza e fortaleça os laços com a comunidade local.</p>
+                        </div>
+                         <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                            <h4 class="text-xl font-bold text-blue-800">Relatórios de Impacto</h4>
+                            <p class="text-sm text-gray-500 mt-1">Receba dados detalhados sobre o impacto ambiental e social gerado pela parceria.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-blue-900 text-white">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Lixo Zero Coleta</h3>
+                    <p class="text-blue-200">Transformando resíduos em um futuro mais limpo e justo para todos.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navegação</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#como-funciona" class="text-blue-200 hover:text-white">Como Funciona</a></li>
+                        <li><a href="#tecnologia" class="text-blue-200 hover:text-white">Nossa Tecnologia</a></li>
+                        <li><a href="#pontos-coleta" class="text-blue-200 hover:text-white">Pontos de Coleta</a></li>
+                        <li><a href="#parceiros" class="text-blue-200 hover:text-white">Seja um Parceiro</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Siga-nos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-200 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                        <a href="#" class="text-blue-200 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="#" class="text-blue-200 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-6 text-center text-sm text-blue-300">
+                <p>&copy; 2025 Lixo Zero Coleta. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Dados fictícios para os pontos de coleta
+            const locations = [
+                {
+                    name: "Cooperativa Recicla Bahia",
+                    address: "Av. Sete de Setembro, 123 - Centro, Salvador - BA",
+                    hours: "Seg-Sex: 08:00 - 17:00",
+                    materials: ["Plástico", "Papel", "Metal", "Vidro"],
+                    pos: { top: '30%', left: '40%' }
+                },
+                {
+                    name: "Ecoponto Barra Limpa",
+                    address: "Rua Marquês de Caravelas, 45 - Barra, Salvador - BA",
+                    hours: "Seg-Sáb: 09:00 - 18:00",
+                    materials: ["Plástico", "Metal"],
+                    pos: { top: '55%', left: '25%' }
+                },
+                {
+                    name: "Associação Verdejar",
+                    address: "Alameda das Árvores, 789 - Itaigara, Salvador - BA",
+                    hours: "Ter-Dom: 10:00 - 16:00",
+                    materials: ["Plástico", "Papel", "Óleo de Cozinha"],
+                    pos: { top: '45%', left: '65%' }
+                },
+                 {
+                    name: "Ponto de Entrega Rio Vermelho",
+                    address: "Praça Caramuru, 10 - Rio Vermelho, Salvador - BA",
+                    hours: "24 horas",
+                    materials: ["Plástico", "Metal", "Vidro"],
+                    pos: { top: '68%', left: '50%' }
+                }
+            ];
+
+            const mapContainer = document.getElementById('map-container');
+            const locationName = document.getElementById('location-name');
+            const locationAddress = document.getElementById('location-address');
+            const locationHours = document.getElementById('location-hours');
+            const locationMaterials = document.getElementById('location-materials');
+
+            let activePin = null;
+
+            // Função para atualizar os detalhes da localização
+            function updateDetails(location) {
+                locationName.textContent = location.name;
+                locationAddress.textContent = location.address;
+                locationHours.innerHTML = `<span class="font-semibold">Horário:</span> ${location.hours}`;
+                
+                let materialsHtml = '<p class="font-semibold mb-2">Materiais aceitos:</p><div class="flex flex-wrap gap-2">';
+                location.materials.forEach(material => {
+                    materialsHtml += `<span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">${material}</span>`;
+                });
+                materialsHtml += '</div>';
+                locationMaterials.innerHTML = materialsHtml;
+
+                if (activePin) {
+                    activePin.classList.remove('ring-4', 'ring-offset-2', 'ring-blue-500');
+                    activePin.classList.add('bg-blue-500');
+                }
+            }
+            
+            // Cria os pins no mapa
+            locations.forEach((loc, index) => {
+                const pin = document.createElement('div');
+                pin.className = 'map-pin absolute w-5 h-5 bg-blue-500 rounded-full cursor-pointer border-2 border-white shadow-xl';
+                pin.style.top = loc.pos.top;
+                pin.style.left = loc.pos.left;
+                pin.setAttribute('data-index', index);
+                
+                pin.addEventListener('click', () => {
+                    updateDetails(loc);
+                     if (activePin) {
+                        activePin.classList.remove('!bg-blue-700', 'scale-125');
+                    }
+                    pin.classList.add('!bg-blue-700', 'scale-125');
+                    activePin = pin;
+                });
+
+                mapContainer.appendChild(pin);
+            });
+
+            // Inicia com o primeiro ponto selecionado
+            if (locations.length > 0) {
+                 const firstPin = mapContainer.querySelector('.map-pin');
+                 firstPin.click();
+            }
+        });
+    </script>
+
+</body>
+</html>
